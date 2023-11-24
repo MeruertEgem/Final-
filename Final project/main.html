@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./main.css">
+    <title>Students page</title>
+    <link rel="icon" type="image/x-icon" href="student.ico">
+  </head>
+  <body>
+<!--Navbar-->
+<header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+	data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="" role="button" ><i class="fa fa-bars" aria-hidden="false" style="color:#e6e6ff"></i></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="main.html">Home <i class="fa-solid fa-house fa-bounce"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="about.html">About <i class="fa-solid fa-circle-info fa-bounce"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="quiz.html">Events <i class="fa-solid fa-calendar-check fa-bounce"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="contact.html">Contact <i class="fa-solid fa-user-large fa-bounce"></i></a>
+              </li>
+            
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+
+
+<!--Carousel start-->
+<div class="sec1" id="sec1">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <div class="carousel_back">
+        <img src="https://images.pexels.com/photos/1181698/pexels-photo-1181698.jpeg" alt="">
+        <div class="carousel-container">
+            <div class="carousel-content-container">
+                <h2>Student's life</h2>
+            </div>
+        </div>
+       </div>
+    </div>
+    <div class="carousel-item ">
+        <div class="carousel_back">
+         <img src="https://images.pexels.com/photos/5965687/pexels-photo-5965687.jpeg" alt="">
+         <div class="carousel-container">
+             <div class="carousel-content-container">
+                 <h2>IT university</h2>
+             </div>
+         </div>
+        </div>
+     </div>
+     <div class="carousel-item ">
+        <div class="carousel_back">
+         <img src="https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg" alt="">
+         <div class="carousel-container">
+             <div class="carousel-content-container">
+                 <h2>Welcome</h2>
+             </div>
+         </div>
+        </div>
+     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<!--sec2-->
+<div class="sec2">
+<div class="container" style="font-size: 34px; margin-top: 24px; border-bottom: 4px solid #DDF2FD; padding-bottom: 11px;">
+    <span class="text first-text">I'm a</span>
+    <span class="text sec-text">Student</span>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Student";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Developer";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Coder";
+            }, 8000);
+        };
+        textLoad();
+        setInterval(textLoad, 12000);
+    });
+</script>
+    
+<div class="text2" >
+
+</div>
+
+<script>const div = document.querySelector(".text2");
+const text2 = "At IT university, we foster an environment of academic excellence, innovation, and inclusive learning. As a leading institution in higher education, we are dedicated to empowering students with the knowledge, skills, and resources necessary to thrive in a rapidly evolving world";
+
+function textTypingEffect(element, text2, i=0){
+    if(i===0){
+        element.textContent = "";
+    }
+element.textContent += text2[i];
+if( i===text2.length-1){
+return;
+}
+setTimeout(() => textTypingEffect(element, text2, i+1),50);
+
+}
+    textTypingEffect(div,text2);
+</script>     
+
+</div>   
+
+
+
+
+<!--sec3-->
+<p class="container text-center" style="  border-bottom: 4px solid #ddf2fd82; font-size: 34px;color: #e6e6e6;">IT students moments </p>
+<p id="Text" class="text-center" style="font-size: 16px;color: #e6e6e6b8;margin-bottom: 50px; "> These moments aren't just fleeting instances but <br>the building blocks of a transformative journey, shaping IT students into future innovators, problem solvers, and leaders. </p>
+<div class="sec3">
+  
+<div class="wrapper">
+  <i id="left" class="fa-solid fa-angle-left"></i>
+  <div class="carousel1">
+    <img src="https://astanait.edu.kz/wp-content/uploads/2020/03/university-life-800x533.jpg" alt="">
+    <img src="https://tengrinews.kz/userdata/u368/2020-06/resize/7873b4ffd9d9d688ccb724adb6ab1178.jpeg" alt="">
+    <img src="https://tengrinews.kz/userdata/u38/2021-07/resize/f76da86ab9889d0f82d5da59c54af760.jpeg" alt="">
+    <img src="https://tengrinews.kz/userdata/u38/2021-07/resize/05ed1c9953b1a10cc8e52577dd1859d8.jpeg" alt="">
+    <img src="https://astanait.edu.kz/wp-content/uploads/2022/05/DSC05082-scaled.jpg" alt="">
+    <img src="https://astanait.edu.kz/wp-content/uploads/2020/11/DSC00058-scaled.jpg" alt="">
+    <img src="https://astanait.edu.kz/wp-content/uploads/2023/01/DSC07394.jpg" alt="">
+    <img src="https://img.the-steppe.com/images/news/5817-iErBWVHH.jpg" alt="">
+    <img src="https://astanait.edu.kz/wp-content/uploads/2023/01/DSC07732.jpg" alt="">
+    <img src="https://astanait.edu.kz/wp-content/uploads/2023/01/DSC06558.jpg" alt="">
+    <img src="https://astanait.edu.kz/wp-content/uploads/2023/01/DSCF8056.jpg" alt="">
+    <img src="https://astanait.edu.kz/wp-content/uploads/2020/04/thumbnail-600x333.jpg" alt="">
+  </div>
+  <i id="right" class="fa-solid fa-angle-right"></i>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--sec4-->
+
+<div class="sec4"> 
+  <p class="container text-center" style=" border-bottom: 4px solid #ddf2fd81; font-size: 34px;color: #e6e6e6;">Life on campus </p>
+  <p  class="text-center" id="myText"style="font-size: 16px;color: #e6e6e6b8;">Life on campus is a vibrant tapestry of learning, exploration,<br> and camaraderie. Our campus isn't just a place of education; <br>it's a hub of diverse experiences and opportunities. </p>
+
+   <div class="container">
+     <div class="row" style=" margin-bottom: 140px;">
+    <div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+    <img src="https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg" alt="" class="card image-top" height="200px" >
+    <div class="card-body"> 
+    <h5 class="card-titel text-center">Large library</h5>
+    <p class="text-center">Lorem ipsum dolor sit amet.</p>
+    
+    
+    </div>
+    
+    </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+    <img src="https://images.pexels.com/photos/3952080/pexels-photo-3952080.jpeg" alt="" class="card image-top" height="200px" >
+    <div class="card-body"> 
+    <h5 class="card-titel text-center">Cafetaria</h5>
+    <p class="text-center">Lorem ipsum dolor sit amet.</p>
+    
+    
+    </div>
+    
+    </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+    <div class="card">
+    <img src="https://images.pexels.com/photos/5483233/pexels-photo-5483233.jpeg" alt="" class="card image-top" height="200px" >
+    <div class="card-body"> 
+    <h5 class="card-titel text-center">Study spaces</h5>
+    <p class="text-center">Lorem ipsum dolor sit amet.</p>
+    
+    
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+</div>
+
+<script>
+const carousel1 = document.querySelector(".carousel1");
+const firstImg = carousel1.querySelectorAll("img")[0];
+const arrowIcons = document.querySelectorAll(".wrapper i");
+
+let isDragStart = false;
+let prevPageX, prevScrollLeft;
+const firstImgWidth = firstImg.clientWidth + 14;
+
+const showHideIcons = () => {
+    arrowIcons[0].style.display = carousel1.scrollLeft === 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel1.scrollLeft === 0 ? "none" : "block";
+};
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        carousel1.scrollLeft += icon.id === "left" ? -firstImgWidth : firstImgWidth; 
+        setTimeout(() => showHideIcons(), 60);
+    });
+});
+
+const dragStart = (e) => {
+    isDragStart = true;
+    prevPageX = e.pageX;
+    prevScrollLeft = carousel1.scrollLeft;
+};
+
+const dragging = (e) => {
+    if (!isDragStart) return;
+    e.preventDefault();
+    carousel1.classList.add("dragging");
+    const positionDiff = e.pageX - prevPageX;
+    carousel1.scrollLeft = prevScrollLeft - positionDiff;
+};
+
+const dragStop = () => {
+    isDragStart = false;
+    carousel1.classList.remove("dragging");
+};
+
+carousel1.addEventListener("mousedown", dragStart);
+carousel1.addEventListener("mousemove", dragging);
+carousel1.addEventListener("mouseup", dragStop);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--sec5-->
+ <div class="sec5">
+ 
+<div class="container categories_container">
+  <div class="categories_left">
+<h1 style=" border-bottom: 4px solid #ddf2fd81; font-size: 34px;color: #e6e6e6;">Students opportunities</h1>
+<p id="myText" style="font-size: 16px;color: #e6e6e6a0;">
+  At IT University, we're dedicated to cultivating an environment where students thrive,
+   innovate, and succeed. Our commitment extends beyond academics, offering a myriad of opportunities to shape a well-rounded educational journey.
+</p>
+<a href="#" class="btn">Learn more</a>
+  </div>
+  <div class="categories_right">
+<article class="category">
+  <span class="category_icon"><i class="fa-solid fa-star"></i></span>
+  <h5>Research Opportunities</h5>
+  <p>Access to top-notch facilities for groundbreaking research.</p>
+</article>
+<article class="category">
+  <span class="category_icon"><i class="fa-solid fa-heart"></i></span>
+  <h5>Financial Assistance</h5>
+  <p>Scholarships and aid for accessible education.</p>
+</article>
+<article class="category">
+  <span class="category_icon"><i class="fa-solid fa-face-smile"></i></span>
+  <h5>Extracurriculars</h5>
+  <p>Diverse activities enriching leadership and personal interests.</p>
+</article>
+<article class="category">
+  <span class="category_icon"><i class="fa-solid fa-calendar-days"></i></span>
+  <h5>Cutting-edge Programs</h5>
+  <p>Innovative courses fostering critical thinking and practical skills.</p>
+</article>
+<article class="category">
+  <span class="category_icon"><i class="fa-regular fa-thumbs-up"></i></span>
+  <h5>Support Services</h5>
+  <p> Holistic support for academic, career, and personal growth.</p>
+</article>
+<article class="category">
+  <span class="category_icon"><i class="fa-solid fa-comments"></i></span>
+  <h5>Industry Connections</h5>
+  <p>Internships and partnerships for real-world experience.</p>
+</article>
+  </div>
+</div>
+
+
+ </div> 
+
+
+
+
+<!--sec6-->
+
+<div class="sec6" style="padding-top:10px;">
+
+    <div class="container text-center">
+    <div class="row">
+    <div class="col-md-6">
+      <div class="panel.text-left" style="padding-top:150px; color: #DDF2FD;">
+      <h1 style=" border-bottom: 4px solid #ddf2fd81; font-size: 34px;color: #e6e6e6;">Students house <i class="fa-solid fa-building"></i></h1>
+      <p class="pt-4" style="font-size: 20px;color: #e6e6e6a0;">
+        A student house is a vibrant space bustling with youthful energy and camaraderie.
+      </p> 
+      <p></p>
+      <p>
+    <li style="font-size: 16px;color: #e6e6e6a0;">Common Area  <i class="fa-solid fa-check fa-beat-fade"></i><br> A cozy space with a mix of thrifted furniture, a well-loved sofa, and a coffee table strewn with study materials. </li>
+    <li  style="font-size: 16px;color: #e6e6e6a0;">Kitchen  <i class="fa-solid fa-check fa-beat-fade"></i><br> A hub of activity where pots and pans clink, adorned with a whiteboard on the fridge for reminders and chore assignments.</li>
+    <li  style="font-size: 16px;color: #e6e6e6a0;">Personalized Bedrooms  <i class="fa-solid fa-check fa-beat-fade"></i> <br> Each room reflects the inhabitant's personality, featuring posters, personal belongings, and sometimes organized chaos.</li>
+    <li  style="font-size: 16px;color: #e6e6e6a0;">Backyard  <i class="fa-solid fa-check fa-beat-fade"></i> <br> A serene retreat with a hammock or seating area under the shade, providing a peaceful escape from studies.</li>
+     </ul>
+     </p>   
+     
+      </div><a href="#" class="btn">Show me</a>  
+      </div>
+      <div class="col-md-6">
+         <div class="pray"  style="padding-top:160px; padding-bottom:30px;">
+           <img src="https://images.pexels.com/photos/3225640/pexels-photo-3225640.jpeg">
+    
+         </div>
+    
+      </div>
+      
+      
+      
+    </div>
+
+
+
+
+</div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer__container">
+  <div class="footer__links">
+    <div class="footer__link--wrapper">
+      <div class="footer__link--items">
+        <h2>About Us</h2>
+        <a href="/sign__up">Events Calendar</a> <a href="/">Students Clubs</a>
+        <a href="/">Academic Programs</a> <a href="/">Student Service</a>
+      </div>
+      <div class="footer__link--items">
+        <h2>Contact Us</h2>
+        <a href="/">Contacts</a> <a href="/">Support</a>
+        <a href="/">Address</a>
+      </div>
+    </div>
+    <div class="footer__link--wrapper">
+      <div class="footer__link--items">
+        <h2>Resources</h2>
+        <a href="/">Academic calendar</a> <a href="/">Students Handbooks</a>
+        <a href="/">Career services</a>
+      </div>
+      <div class="footer__link--items">
+        <h2>Social Media</h2>
+        <a href="/">Instagram</a> <a href="/">Facebook</a>
+        <a href="/">Twitter</a>  <a href="/">Tik Tok</a>
+      </div>
+    </div>
+  </div>
+  <section class="social__media">
+    <div class="social__media--wrap">
+      <div class="footer__logo">
+        <a href="/" id="footer__logo">IT University</a>
+      </div>
+      <p class="website__rights">© IT UNIVERSITY 2023. All rights reserved</p>
+      <div class="social__icons">
+        <a href="/" class="social__icon--link" target="_blank"
+          ><i class="fa-brands fa-facebook fa-beat"></i></a>
+        <a href="/" class="social__icon--link"
+          ><i class="fa-brands fa-instagram fa-beat"></i></a>
+       
+        <a href="/" class="social__icon--link"
+          ><i class="fa-brands fa-tiktok fa-beat"></i></a>
+        <a href="/" class="social__icon--link"
+          ><i class="fa-brands fa-twitter fa-beat"></i></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<!--mouseover js-->
+
+<script>
+  const textElement = document.getElementById('Text');
+
+  function handleMouseOver() {
+    textElement.style.color = '#e6e6e6e8';
+  }
+
+  function handleMouseOut() {
+    textElement.style.color = '#e6e6e6a0';
+  }
+
+  textElement.addEventListener('mouseover', handleMouseOver);
+  textElement.addEventListener('mouseout', handleMouseOut);
+</script>
+
+
+
+
+
+    
+    
+    
+<script src="/main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
